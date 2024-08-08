@@ -4,7 +4,7 @@ Release:        1
 Summary:        Free software version of the non-free unrar utility
 License:        GPL-2.0-or-later
 URL:            https://gitlab.com/bgermann/unrar-free
-Source:         https://gitlab.com/bgermann/unrar-free/-/archive/%{version}/%{name}-%{version}.tar.gz
+Source:         https://gitlab.com/bgermann/unrar-free/-/archive/%{version}/%{name}-%{version}.tar.bz2
 
 BuildRequires:  autoconf
 BuildRequires:  automake
