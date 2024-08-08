@@ -18,13 +18,6 @@ extract RAR archives but also other formats supported by libarchive. It does
 not rival the non-free unrar in terms of features, but special care has been
 taken to ensure it meets most user's needs.
 
-%package -n     unrar
-Summary:        Wrapper package for unrar-free
-Requires:       %{name}%{_isa} = %{version}-%{release}
-
-%description -n unrar
-This packages is a wrapper to use unrar-free as /usr/bin/unrar.
-
 %prep
 %autosetup -p1
 
@@ -35,15 +28,9 @@ autoreconf -i
 
 %install
 %make_install
-ln -s unrar-free %{buildroot}%{_bindir}/unrar
-ln -s unrar-free.1 %{buildroot}%{_mandir}/man1/unrar.1
 
 %files
 %license COPYING
 %doc AUTHORS ChangeLog README TODO misc/tarar.pike
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1*
-
-%files -n unrar
-%{_bindir}/unrar
-%{_mandir}/man1/unrar.1*
