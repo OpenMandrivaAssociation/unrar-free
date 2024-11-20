@@ -1,6 +1,6 @@
 Name:           unrar-free
 Version:        0.3.1
-Release:        1
+Release:        2
 Summary:        Free software version of the non-free unrar utility
 License:        GPL-2.0-or-later
 URL:            https://gitlab.com/bgermann/unrar-free
